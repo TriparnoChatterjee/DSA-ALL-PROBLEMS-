@@ -26,16 +26,16 @@ public:
     }
 };
 /*
-    This code handles the case of zeros in the array
+    This code handles the case of zeros in the array pattern 1 of handling count 
  */
 int main()
 {
     Solution s;
-    vector<int> arr = {1, 2, 2,0,  3};
+    vector<int> arr = {1, 2, 1};
     vector<int> temp;
     int sum = 0;
     vector<vector<int>> ans;
-    s.f(0, sum, 4, 3, arr, ans, temp);
+    s.f(0, sum, 3, 2, arr, ans, temp);
     for (const auto item : ans)
     {
         for (const auto el : item)
